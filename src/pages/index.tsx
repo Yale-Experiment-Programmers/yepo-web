@@ -39,11 +39,14 @@ const HomePage: NextPage = () => {
               individuals to techniques beyond the scope of their training and
               foster cross-disciplinary pollination.
             </p>
-            With the support of the Wu Tsai Institute at Yale, we are currently
-            developing workshops to explore techniques from computer-based
-            fields as they apply to the traditional experiment paradigm. These
-            workshops are designed to make these seemingly challenging or
-            foreign concepts accessible even to the most novice researchers.
+            <p>
+              With the support of the Wu Tsai Institute at Yale, we are
+              currently developing workshops to explore techniques from
+              computer-based fields as they apply to the traditional experiment
+              paradigm. These workshops are designed to make these seemingly
+              challenging or foreign concepts accessible even to the most novice
+              researchers.
+            </p>
           </div>
         </div>
       </div>
