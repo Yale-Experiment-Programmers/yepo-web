@@ -1,0 +1,22 @@
+/*
+ * Header.module.scss
+ * Author: Evan Kirkiles
+ * Created on: Thu Oct 20 2022
+ * © 2022 Yale Experiment Programmers' Organization
+ */
+@import '../../styles/mixins';
+
+.container {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+  font-weight: 400;
+  height: $header-height;
+  padding: $header-padding calc($header-padding * 2);
+  // font-size: calc($header-height - $header-padding * 2);
+}

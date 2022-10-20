@@ -1,0 +1,19 @@
+{
+  "fileHeaderComment.parameter": {
+    "*": {
+      "company": "Yale Experiment Programmers' Organization",
+      "name": "Evan Kirkiles"
+    }
+  },
+  "fileHeaderComment.template": {
+    "*": [
+      "${commentbegin}",
+      "${commentprefix} ${filename}",
+      "${commentprefix} Author: ${name}",
+      "${commentprefix} Created on: ${date}",
+      "${commentprefix} © ${year} ${company}",
+      "${commentend}"
+    ]
+  },
+  "editor.formatOnSave": true
+}

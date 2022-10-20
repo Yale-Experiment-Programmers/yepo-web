@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'YaleNew';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/yale/fonts/YaleNew/YaleNew-Roman.otf') format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'YaleNew';
+  font-style: italic;
+  font-weight: 400;
+  src: url('/yale/fonts/YaleNew/YaleNew-Italic.otf') format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'YaleNew';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/yale/fonts/YaleNew/YaleNew-Bold.otf') format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'YaleNew';
+  font-style: italic;
+  font-weight: 700;
+  src: url('/yale/fonts/YaleNew/YaleNew-BoldItalic.otf') format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'YaleNew Marks';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/yale/fonts/YaleNew-marks/yalemarks-webfont.ttf') format('truetype');
+  font-display: swap;
+}
