@@ -7,6 +7,7 @@
 import type { NextPage } from 'next';
 import { NextSeo } from 'next-seo';
 import Head from 'next/head';
+import TypeWriterEffect from '../components/TypewriterEffect/TypeWriterEffect';
 import YEPO from '../icons/YEPO';
 import s from '../styles/Home.module.scss';
 
@@ -21,6 +22,14 @@ const HomePage: NextPage = () => {
         <div className={s.row}>
           <div className={s.main_column}>
             <div style={{ flex: 1 }}></div>
+            <TypeWriterEffect
+              text="cd yepo_resources"
+              className={s.code}
+            ></TypeWriterEffect>
+            <TypeWriterEffect
+              text="python launch_experiment.py"
+              className={s.code}
+            ></TypeWriterEffect>
             <YEPO className={s.yepo_icon} />
           </div>
           <div className={s.main_column}>

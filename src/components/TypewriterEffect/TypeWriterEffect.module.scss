@@ -1,0 +1,20 @@
+/*
+ * TypeWriterEffect.module.scss
+ * Author: Evan Kirkiles
+ * Created on: Thu Oct 20 2022
+ * © 2022 Yale Experiment Programmers' Organization
+ */
+@import '../../styles/mixins';
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.typewriter_pointer {
+  display: inline;
+  // border-left: 1px solid $foreground;
+  height: 1em;
+  animation: blink 0.6s step-end infinite;
+}

@@ -18,27 +18,49 @@
   width: 100%;
   min-height: calc(100vh - $header-height);
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
   padding: 20px;
-  gap: 50px;
+  gap: 30px;
+
+  @include respond-to('small') {
+    flex-direction: row;
+    gap: 50px;
+  }
 }
 
 .main_column {
-  flex: 1;
+  width: 100%;
   min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+
+  &:first-of-type {
+    position: sticky;
+    bottom: 20px;
+    min-height: 400px;
+  }
+
+  & p:last-of-type {
+    margin: 0;
+  }
 }
 
 .yepo_icon {
   width: 100%;
   height: auto;
   display: block;
-  position: sticky;
-  bottom: 0px;
   left: 0px;
+  margin-top: 20px;
   & path {
     fill: $foreground;
   }
+}
+
+.code {
+  font-family: 'Courier New';
+  font-size: 20px;
 }
