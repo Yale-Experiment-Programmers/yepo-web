@@ -47,6 +47,7 @@
     ],
     "*.scss": [
       "prettier --write"
-    ]
+    ],
+    "*.js": "eslint --cache --fix"
   }
 }
