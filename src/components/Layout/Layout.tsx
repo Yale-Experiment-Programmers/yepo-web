@@ -6,6 +6,7 @@
  */
 import s from './Layout.module.scss';
 import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 
 type LayoutProps = {
   children?: React.ReactNode;
@@ -16,6 +17,7 @@ const Layout: React.FC<LayoutProps> = function Layout({ children }) {
     <div className={s.container}>
       <Header />
       {children}
+      <Footer />
     </div>
   );
 };
