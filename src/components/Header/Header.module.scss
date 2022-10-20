@@ -18,5 +18,6 @@
   font-weight: 400;
   height: $header-height;
   padding: $header-padding calc($header-padding * 2);
+  background: linear-gradient(180deg, $background 0%, transparent 90%);
   // font-size: calc($header-height - $header-padding * 2);
 }
