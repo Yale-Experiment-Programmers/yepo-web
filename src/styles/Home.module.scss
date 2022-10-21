@@ -37,6 +37,7 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
+  gap: 20px;
 
   &:first-of-type {
     position: sticky;
@@ -44,9 +45,15 @@
     min-height: 400px;
   }
 
-  & p:last-of-type {
+  & p {
     margin: 0;
   }
+}
+
+.dinkus {
+  text-align: center;
+  width: 100%;
+  margin-bottom: -10px;
 }
 
 .yepo_icon {

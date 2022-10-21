@@ -5,7 +5,7 @@
  * © 2022 Yale Experiment Programmers' Organization
  */
 import s from './TypeWriterEffect.module.scss';
-import { useCallback, useEffect, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 
 type TypeWriterEffectProps = {
   text: string | string[];
@@ -58,10 +58,10 @@ const TypeWriterEffect: React.FC<TypeWriterEffectProps> =
     return (
       <div ref={textRef} className={className}>
         {text.map((txt, i) => (
-          <>
+          <React.Fragment key={i}>
             {`> ${txt}`}
             {i !== text.length - 1 ? <br /> : null}
-          </>
+          </React.Fragment>
         ))}
         <div className={s.typewriter_pointer}>|</div>
       </div>

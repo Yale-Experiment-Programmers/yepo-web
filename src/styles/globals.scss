@@ -54,14 +54,6 @@ body,
   font-size: calc(var(--base-unit) * 2);
 }
 
-#__next {
-  background: linear-gradient(
-    190deg,
-    var(--background-color) 50%,
-    var(--background-2-color) 100%
-  );
-}
-
 ::selection {
   background: var(--highlight-color);
 }

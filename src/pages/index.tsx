@@ -53,6 +53,14 @@ const HomePage: NextPage = () => {
               challenging or foreign concepts accessible even to the most novice
               researchers.
             </p>
+            <div className={s.dinkus}>* * *</div>
+            <p>
+              We are actively looking to include people interested in teaching
+              and learning in our community. If you are interested in learning
+              more about our organization, please feel free to contact Evan
+              Kirkiles, Yale College ’24 or Josh Kenney, Research Associate III
+              at the Belief, Learning & Memory Lab.
+            </p>
           </div>
         </div>
       </div>
