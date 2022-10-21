@@ -8,7 +8,7 @@ import s from './TypeWriterEffect.module.scss';
 import { useCallback, useEffect, useRef, useState } from 'react';
 
 type TypeWriterEffectProps = {
-  text: string;
+  text: string | string[];
   className?: string;
   typeSpeed?: number;
   startDelay?: number;
@@ -25,36 +25,44 @@ const TypeWriterEffect: React.FC<TypeWriterEffectProps> =
     const textRef = useRef(null);
 
     // statefuls
-    const [text, setText] = useState<string>('');
-    const [blink, setBlink] = useState<boolean>(false);
-    const [showCursor, setShowCursor] = useState<boolean>(false);
+    const [text, setText] = useState<string[]>(['']);
 
     // animation function
     const animation = useCallback(
-      async (str: string) => {
-        const textArr = str.trim().split('');
-        setBlink(false);
-        let _text = '';
+      async (strs: string[]) => {
+        const _text: string[] = [];
+        for (let i = 0; i < strs.length; i++) {
+          _text.push('');
+          await new Promise((res) => setTimeout(res, startDelay));
+          const textArr = strs[i].trim().split('');
 
-        for (let char = 0; char < textArr.length; char++) {
-          await new Promise((res) => setTimeout(res, typeSpeed));
-          _text += textArr[char];
-          setText(_text);
+          for (let char = 0; char < textArr.length; char++) {
+            await new Promise((res) => setTimeout(res, typeSpeed));
+            _text[i] += textArr[char];
+            setText([..._text]);
+          }
         }
-        setBlink(true);
       },
-      [setBlink, typeSpeed]
+      [startDelay, typeSpeed]
     );
 
     // begin animation on mount
     useEffect(() => {
-      animation(fullText);
+      if (typeof fullText !== 'string') {
+        animation(fullText);
+      } else {
+        animation([fullText]);
+      }
     }, [fullText, animation]);
 
     return (
       <div ref={textRef} className={className}>
-        {'> '}
-        {text}
+        {text.map((txt, i) => (
+          <>
+            {`> ${txt}`}
+            {i !== text.length - 1 ? <br /> : null}
+          </>
+        ))}
         <div className={s.typewriter_pointer}>|</div>
       </div>
     );

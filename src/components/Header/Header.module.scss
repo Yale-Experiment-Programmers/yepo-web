@@ -14,10 +14,76 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  gap: 40px;
+  gap: 10px;
   font-weight: 400;
   height: $header-height;
-  padding: $header-padding calc($header-padding * 2);
+  padding: 0px calc($header-padding * 2);
   background: linear-gradient(180deg, $background 0%, transparent 90%);
+  background-color: $background;
   z-index: 10;
+  // border-bottom: 1px solid $foreground;
+
+  // @include respond-to('small') {
+  //   border: none;
+  // }
+
+  &::after {
+    height: 30px;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    content: ' ';
+    z-index: 1;
+    transform: translateY(100%);
+    background: linear-gradient(180deg, $background 0%, transparent 90%);
+  }
+}
+
+.logo {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-shrink: 0;
+  padding-bottom: 5px;
+}
+
+.links_container {
+  height: 100%;
+  display: none;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+
+  @include respond-to('small') {
+    display: flex;
+  }
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+  position: relative;
+  cursor: pointer;
+
+  @include respond-to('small') {
+    display: none;
+  }
+}
+
+.menu_text {
+  display: none;
+  @include respond-to('xsmall') {
+    display: block;
+  }
+  @include respond-to('small') {
+    display: none;
+  }
 }

@@ -23,12 +23,9 @@ const HomePage: NextPage = () => {
           <div className={s.main_column}>
             <div style={{ flex: 1 }}></div>
             <TypeWriterEffect
-              text="cd yepo_resources"
+              text={['cd yepo_resources', 'python launch_experiment.py']}
               className={s.code}
-            ></TypeWriterEffect>
-            <TypeWriterEffect
-              text="python launch_experiment.py"
-              className={s.code}
+              typeSpeed={60}
             ></TypeWriterEffect>
             <YEPO className={s.yepo_icon} />
           </div>
@@ -36,10 +33,10 @@ const HomePage: NextPage = () => {
             <p>
               The Yale Experiment Programmers Organization (YEPO) is a community
               of researchers across many disciplines, including the School of
-              Medicine, Neuroscience, Psychology, Behavioral Economics etc.
-              Researchers in our community all share an interest in developing
-              tasks and surveys to study human behavior, both in-person and
-              online.
+              Medicine, Neuroscience, Psychology, Behavioral Economics, and
+              more. Researchers in our community all share an interest in
+              developing tasks and surveys to study human behavior, both
+              in-person and online.
             </p>
             <p>
               Our mission is to advocate for best practices for developing
