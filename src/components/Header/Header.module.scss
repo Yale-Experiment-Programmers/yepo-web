@@ -18,7 +18,7 @@
   font-weight: 400;
   height: $header-height;
   padding: 0px calc($header-padding * 2);
-  background: linear-gradient(180deg, $background 0%, transparent 90%);
+  // background: linear-gradient(180deg, $background 0%, transparent 90%);
   background-color: $background;
   z-index: 10;
   // border-bottom: 1px solid $foreground;
