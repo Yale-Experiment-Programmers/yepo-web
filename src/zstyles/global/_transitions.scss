@@ -1,0 +1,49 @@
+.Transition {
+  &__fade {
+    &-enter,
+    &-appear {
+      opacity: 0;
+    }
+
+    &-enter-active,
+    &-appear-active {
+      opacity: 1;
+      transition: opacity 0.3s ease;
+    }
+
+    &-exit {
+      opacity: 1;
+    }
+
+    &-exit-active {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+  }
+
+  &__fadeupswitch {
+    &-enter,
+    &-appear {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+
+    &-enter-active,
+    &-appear-active {
+      opacity: 1;
+      transform: translateY(0px);
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    &-exit {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+
+    &-exit-active {
+      opacity: 0;
+      transform: translateY(-10px);
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+  }
+}

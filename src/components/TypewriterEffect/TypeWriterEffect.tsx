@@ -4,7 +4,6 @@
  * Created on: Thu Oct 20 2022
  * © 2022 Yale Experiment Programmers' Organization
  */
-import s from './TypeWriterEffect.module.scss';
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 
 type TypeWriterEffectProps = {
@@ -63,7 +62,7 @@ const TypeWriterEffect: React.FC<TypeWriterEffectProps> =
             {i !== text.length - 1 ? <br /> : null}
           </React.Fragment>
         ))}
-        <div className={s.typewriter_pointer}>|</div>
+        <div className="TypewriterEffect__pointer">|</div>
       </div>
     );
   };

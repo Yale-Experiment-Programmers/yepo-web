@@ -4,13 +4,12 @@
  * Created on: Thu Oct 20 2022
  * © 2022 Yale Experiment Programmers' Organization
  */
-import s from './Footer.module.scss';
 
 const Footer: React.FC = function Footer() {
   return (
-    <div className={s.container}>
-      <div className={s.yale_container}>Yale</div>
-      <div className={s.privacy_policy_column}>
+    <div className="Footer">
+      <div className="Footer__yalecontainer">Yale</div>
+      <div className="Footer__privacypolicy">
         <div>
           <a href="" target="_blank" rel="noopener noreferrer">
             Privacy&nbsp;Policy

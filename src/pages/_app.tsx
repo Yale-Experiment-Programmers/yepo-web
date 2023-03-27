@@ -8,10 +8,7 @@
 import type { AppProps } from 'next/app';
 import { DefaultSeo } from 'next-seo';
 import SEO from '../../next-seo.config';
-// STYLES
-import '../styles/globals.scss';
-import '../styles/fonts.scss';
-import '../styles/lazyloadimgs.scss';
+import '../zstyles/App.scss';
 import Layout from '../components/Layout/Layout';
 
 function MyApp({ Component, pageProps }: AppProps) {

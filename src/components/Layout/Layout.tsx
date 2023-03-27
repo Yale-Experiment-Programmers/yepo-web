@@ -4,7 +4,6 @@
  * created on Tue Oct 18 2022
  * 2022 the nobot space,
  */
-import s from './Layout.module.scss';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 
@@ -14,7 +13,7 @@ type LayoutProps = {
 
 const Layout: React.FC<LayoutProps> = function Layout({ children }) {
   return (
-    <div className={s.container}>
+    <div className="Layout">
       <Header />
       {children}
       <Footer />

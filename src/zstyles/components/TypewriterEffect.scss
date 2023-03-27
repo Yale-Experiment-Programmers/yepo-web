@@ -1,0 +1,15 @@
+/*
+ * TypewriterEffect.scss
+ * Author: Evan Kirkiles
+ * Created on: Mon Mar 27 2023
+ * © 2023 Yale Experiment Programmers' Organization
+ */
+
+.TypewriterEffect {
+  &__pointer {
+    display: inline;
+    // border-left: 1px solid $foreground;
+    height: 1em;
+    animation: blink 1s step-end infinite;
+  }
+}

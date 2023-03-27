@@ -1,0 +1,21 @@
+html,
+body,
+#__next {
+  background-color: color('darkestblue');
+  color: color('white');
+  width: 100%;
+  min-width: 300px;
+}
+
+.hidden {
+  display: none;
+  pointer-events: none;
+}
+
+.pointer-events-none {
+  pointer-events: none;
+}
+
+::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}

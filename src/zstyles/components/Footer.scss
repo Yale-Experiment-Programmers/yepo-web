@@ -1,0 +1,52 @@
+/*
+ * Footer.scss
+ * Author: Evan Kirkiles
+ * Created on: Mon Mar 27 2023
+ * © 2023 Yale Experiment Programmers' Organization
+ */
+
+.Footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  width: 100%;
+  padding: 1em;
+  z-index: zIndex('high');
+  background-color: color('darkestblue');
+  border-top: 1px solid color('white');
+  gap: 1.5em;
+  margin-top: 1em;
+
+  &__yalecontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    font-size: 2em;
+  }
+
+  &__privacypolicy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1;
+    font-size: 0.8em;
+    line-height: 1.25;
+    font-family: 'YaleNew Marks';
+    letter-spacing: -0.05em;
+    font-weight: 100;
+
+    & a {
+      color: color('lightblue');
+      transition: color 0.05s ease-in-out;
+
+      &:hover {
+        color: color('blue');
+      }
+    }
+  }
+}

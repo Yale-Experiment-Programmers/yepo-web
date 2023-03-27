@@ -1,0 +1,95 @@
+/*
+ * Header.scss
+ * Author: Evan Kirkiles
+ * Created on: Mon Mar 27 2023
+ * © 2023 Yale Experiment Programmers' Organization
+ */
+
+.Header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1em;
+  font-weight: 500;
+  height: var(--height-header);
+  padding-left: 1em;
+  padding-right: 0.5em;
+  background-color: color('darkestblue');
+  z-index: zIndex('high');
+
+  @include media('sm') {
+    padding-right: 1em;
+  }
+
+  &::after {
+    height: 30px;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    content: ' ';
+    z-index: 1;
+    transform: translateY(100%);
+    background: linear-gradient(
+      180deg,
+      color('darkestblue') 0%,
+      transparent 90%
+    );
+  }
+
+  &__logo {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-shrink: 0;
+    padding-bottom: 0.5em;
+    cursor: pointer;
+
+    & > * {
+      user-select: none;
+    }
+  }
+
+  &__links {
+    display: none;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2em;
+
+    @include media('sm') {
+      display: flex;
+    }
+  }
+
+  &__hamburgertext {
+    display: none;
+    @include media('xs') {
+      display: block;
+    }
+    @include media('sm') {
+      display: none;
+    }
+  }
+
+  &__hamburger {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    position: relative;
+    cursor: pointer;
+
+    @include media('sm') {
+      display: none;
+    }
+  }
+}

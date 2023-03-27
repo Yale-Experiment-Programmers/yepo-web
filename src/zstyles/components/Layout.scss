@@ -1,0 +1,16 @@
+/*
+ * Layout.scss
+ * Author: Evan Kirkiles
+ * Created on: Mon Mar 27 2023
+ * © 2023 Yale Experiment Programmers' Organization
+ */
+
+.Layout {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  padding-top: var(--height-header);
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}

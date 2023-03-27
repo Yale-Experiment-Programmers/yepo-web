@@ -1,0 +1,22 @@
+//
+// Container Elements
+//
+:root {
+  --height-header: 3rem;
+
+  @include media('xxs') {
+    --height-header: 4rem;
+  }
+
+  @include media('sm') {
+    --height-header: 4.5rem;
+  }
+
+  @include media('lg') {
+    --height-header: 4.8rem;
+  }
+
+  @include media('xl') {
+    --height-header: 5rem;
+  }
+}

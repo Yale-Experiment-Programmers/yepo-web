@@ -9,7 +9,6 @@ import { NextSeo } from 'next-seo';
 import Head from 'next/head';
 import TypeWriterEffect from '../components/TypewriterEffect/TypeWriterEffect';
 import YEPO from '../icons/YEPO';
-import s from '../styles/Home.module.scss';
 
 const HomePage: NextPage = () => {
   return (
@@ -18,18 +17,18 @@ const HomePage: NextPage = () => {
         <title>Index - YEPO</title>
         <NextSeo />
       </Head>
-      <div className={s.container}>
-        <div className={s.row}>
-          <div className={s.main_column}>
+      <div className="Home">
+        <div className="Home__row">
+          <div className="Home__maincolumn">
             <div style={{ flex: 1 }}></div>
             <TypeWriterEffect
               text={['cd yepo_resources', 'python launch_experiment.py']}
-              className={s.code}
+              className="Home__code"
               typeSpeed={60}
             ></TypeWriterEffect>
-            <YEPO className={s.yepo_icon} />
+            <YEPO className="Home__icon" />
           </div>
-          <div className={s.main_column}>
+          <div className="Home__maincolumn">
             <p>
               The Yale Experiment Programmers Organization (YEPO) is a community
               of researchers across many disciplines, including the School of
@@ -53,7 +52,7 @@ const HomePage: NextPage = () => {
               challenging or foreign concepts accessible even to the most novice
               researchers.
             </p>
-            <div className={s.dinkus}>* * *</div>
+            <div className="Home__dinkus">* * *</div>
             <p>
               We are actively looking to include people interested in teaching
               and learning in our community. If you are interested in learning
