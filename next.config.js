@@ -11,7 +11,6 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  output: 'export',
 };
 
 module.exports = withBundleAnalyzer(nextConfig);
