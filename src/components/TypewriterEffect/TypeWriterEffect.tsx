@@ -58,7 +58,7 @@ const TypeWriterEffect: React.FC<TypeWriterEffectProps> =
       <div ref={textRef} className={className}>
         {text.map((txt, i) => (
           <React.Fragment key={i}>
-            {`[yepo@WuTsai ~]$ ${txt}`}
+            {`[yepo@WuTsai html]$ ${txt}`}
             {i !== text.length - 1 ? <br /> : null}
           </React.Fragment>
         ))}

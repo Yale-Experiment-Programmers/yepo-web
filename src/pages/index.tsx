@@ -26,7 +26,7 @@ const HomePage: NextPage = () => {
               text={[
                 'cd yepo-web',
                 'git add *',
-                'git commit -m "changes to layout"',
+                'git commit -m "updated layout"',
                 'git push',
                 'npm run build',
                 'npm start',
