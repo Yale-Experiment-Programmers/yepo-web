@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next export",
     "start": "next start",
     "lint": "next lint",
     "analyze": "ANALYZE=true next build",
@@ -19,7 +20,8 @@
     "react-dom": "18.2.0",
     "react-icons": "^4.4.0",
     "react-transition-group": "^4.4.5",
-    "sass": "^1.54.5"
+    "sass": "^1.54.5",
+    "yarn": "^1.22.19"
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^12.2.5",

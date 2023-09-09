@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://yepo.yale.edu
+
+# Sitemaps
+Sitemap: https://yepo.yale.edu/sitemap.xml

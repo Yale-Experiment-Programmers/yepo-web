@@ -28,8 +28,17 @@ const Header: React.FC = function Header() {
       <div className="Header__links">
         <div>About</div>
         <div>Members</div>
-        <div>Resources</div>
-        <div>Wiki</div>
+        <div>Training</div>
+        <div>Workshops</div>
+        <Link
+          href="https://github.com/Yale-Experiment-Programmers"
+          target="_blank"
+        >
+          Code
+        </Link>
+        <Link href="https://wiki.yepo.yale.edu" target="_blank">
+          Wiki
+        </Link>
       </div>
       <div style={{ flex: 1 }}></div>
       <div className="Header__links">
